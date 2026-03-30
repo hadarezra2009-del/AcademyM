@@ -1,5 +1,6 @@
 import os
 
+path=r"C:\ממריאות"
 def scan_directory(path):
     
     for item in os.listdir(path):
@@ -13,3 +14,5 @@ def scan_directory(path):
         elif os.path.isdir(full_path):
             print("dir", item)
             scan_directory(full_path)
+
+scan_directory(path)
